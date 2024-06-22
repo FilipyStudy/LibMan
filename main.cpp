@@ -15,6 +15,7 @@ struct DbInfo {
 
 class Book {
 public:
+    //TODO: add the gender type.
     Book(string title, string author, string isbn)
         : title(title), author(author), isbn(isbn) {}
 
@@ -32,6 +33,6 @@ private:
         mydb.PGHOST = "localhost";
         mydb.PGDATABASE = "database";
         mydb.PGUSER = "user";
-        mydb.PGPASSWORD = "password";
+        mydb.PGPASSWORD = "root";
     }
 };
